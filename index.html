@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Evaluación módulo 3</title>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <h3>Evaluacion Jquery</h3>
+    <div class="row">
+      <!--Uso del Data-->
+      <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del .Data</h4>
+          <p id="agregarTexto">Himno de Colo-Colo:<br>
+            Cantemos todos de arica a Magallanes
+            Por Colo-Colo ejemplo de valor
+            Por su hidalguía no hay nadie quien lo gane
+            Porque defiende con gloria el tricolor;<br>
+            Es Colo-Colo como el gran araucano
+            Que va a la lucha jamás sin descansar
+            Porque el recuerdo de David Arellano
+            Siempre lo guía por la senda triunfal;<br>
+            <h6></h6>
+            Es Colo-Colo valiente, fuerte y grande
+            De sangre altiva y noble corazón
+            Su nombre virbra desde el mar a los Andes
+            Y hay en sus triunfos esfuerzo y emoción;<br>
+            Laureles deja por todos los caminos
+            Que virilmente luchando conquistó
+            Antorcha inmensa de gloria es su destino
+            Que alumbra siempre con fuego de campeón;<br>
+            <h6></h6></p>
+          <!--Botón para agregar un párrafo-->
+          
+              <div class="col-12 p-1">
+                <button id="adjuntar" class="btn btn-dark p-1">Completar himno</button>
+              </div>
+          <!--Boton para mostrar lo que se agregó-->
+              <div class="col-12 p-1">
+                <button id="obtenerData" class="btn btn-danger p-1">Texto agregado</button>
+              </div>
+          <!--Botón para limpiar el data-->
+              <div class="col-12">
+                <p id="dataAgregada"></p>
+              </div>
+              <div class="col p-1">
+                <button id="limpiar" class="btn btn-outline-danger p-1">Limpiar</button>
+              </div>
+      </div>
+
+      <!--Uso del Addclass-->
+      <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Addclass</h4>
+          <p id="segundotexto">Este texto se pondrá del color de la tercera camiseta de Colo-Colo.<p>
+          <button id="adjuntarclase" class="btn btn-dark p-1">Agregar clases a elementos</button>
+          <button id="limpiaraddclass" class="btn btn-danger p-1">Remover clase</button>
+      </div>
+
+      <!--Uso del Toggle-->
+      <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del toggle</h4>
+          <p>Ver insignia mas linda del mundo</p> <button class="btn btn-dark p-1" id="insignia">Si quiero</button>
+            <div id="respuesta" style="display:none"><img src="imagen.png" alt="insignia de Colo-Colo"> </div>
+      </div>
+
+      <!--Uso del Append-->
+      <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Append</h4>
+          <p id="parrafo">
+            <input class="btn btn-danger p-2" type="button" id="boton" value="Añadir texto al final del párrafo"><br>
+              <strong> La única verdad de Chile:</strong>  <br></p>
+      </div>
+
+      <!--Uso del Val-->
+       <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Val</h4>
+          <form>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-3"><label>Ingrese un texto: </label></div>
+              <div class="col-3"><input type="text" class="form-control"></div>
+            </div>
+              <p id="Val"></p>
+                <button id="textoVal" class="btn btn-dark p-1">Obtenga texto ingresado</button>
+          </form>
+      </div>
+
+      <!--Uso del Fade in y Fade out-->
+      <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Fade in y Fade out</h4>
+          <img id="imagenfade" src='imagen.png' class='img-fluid'>
+            <div class="row justify-content-center">
+              <div class="col-3 text-center"><button id="fadeOut" class="btn btn-dark p-1">Click en fadeOut</button></div>
+              <div class="col-3 text-center"><button id="fadeIn" class="btn btn-danger p-1">Click en fadeIn</button></div>
+            </div>
+      </div>
+
+      <!--Uso del Focus-->
+      <div class="col-12 text-center border border-dark p-3">
+        <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Focus</h4>
+          <input>
+            <span>Colo-Colo es Chile, no lo olvides</span>
+            <p>Presiona el campo de texto para el recordatorio.</p>
+      </div>
+
+        <!--Uso del Hide y el Show-->
+        <div class="col-12 text-center border border-dark p-3">
+          <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Hide y el Show</h4>
+            <h1 id="parrafodetexto">“Lazo permanente de indestructible unión”<br><strong>David Arellano Moraga, Fundador de Colo-Colo</strong></h1>
+              <div class="row p-5 justify-content-center align-items-center">
+                <div class="col-4">
+                  <button id="escondetexto" class="btn btn-dark p-1">Haga clic para desaparecer el parrafo</button>
+                </div>
+                <div class="col-4">
+                  <button id="muestratexto" class="btn btn-danger p-1">haga clic para volver a aparecer el párrafo</button>
+                </div>
+              </div>
+        </div>
+
+        <!--Uso del Slide-->
+        <div class="col-12 text-center border border-dark p-3">
+          <h4 style="background: linear-gradient(to left, white, black, red); color:whitesmoke;">Uso del Slide up y Slide down</h4>
+            <p id="slidetexto" class="text-center"> “Yo hace poco fui a Chile
+              mis amigos de allí, que son en su mayoría fanáticos de Colo-Colo,
+              tratan de iniciar un plan de recuperación del club.
+              Según ellos, fue secuestrado por los empresarios,
+              dirigentes y hasta por los ideólogos que promueven reglas del deporte.
+              Por lo tanto, el fútbol está en peligro de convertirse en un negocio que es tan rentable,
+              pronto igualar el comercio de drogas o armas“<br>
+              <strong>Eduardo Galeano</strong> 
+            </p>
+              <div class="row justify-content-center align-items-center">
+                <div class="col-4">
+                  <button id="subir" class="btn btn-dark p-1">Click en Slide UP</button>
+                </div>
+                <div class="col-4">
+                  <button id="bajar" class="btn btn-danger p-1">Click en Slide Down</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="efectos.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
